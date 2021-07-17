@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/LineageOS/android_device_samsung_universal7880-common/blob/lineage-17.1/configs/wifi/WCNSS_cfg.dat
+HostUrl=https://raw.githubusercontent.com/LineageOS/android_device_samsung_universal7880-common/lineage-17.1/configs/wifi/WCNSS_cfg.dat

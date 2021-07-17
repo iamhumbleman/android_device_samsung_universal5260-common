@@ -1,0 +1,9 @@
+on fs
+    wait /dev/block/platform/dw_mmc.0
+    symlink /dev/block/platform/dw_mmc.0/dev/block/bootdevice
+    symlink /dev/block/platform/dw_mmc.0/by-name/SYSTEM /dev/block/platform/dw_mmc.0/by-name/system
+
+on post-fs-data
+    # avoid USB crash
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
